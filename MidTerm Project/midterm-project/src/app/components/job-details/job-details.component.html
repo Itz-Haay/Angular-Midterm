@@ -1,0 +1,13 @@
+<div class="job-details-container">
+    <h2 class="job-details-title">Job Details</h2>
+<div *ngIf="currentJobId">
+    <div class="job-details-info">
+        <h4>{{currentJobTitle}}</h4>
+        <p>{{currentJobDesc}}</p>
+        <p>Duration: {{ currentJobDur}}</p>
+        <p>Employer: {{ currentJobEmpl}}</p>
+    </div>
+</div>
+<a routerLink="/jobs" class="back-to-jobs-link">Back to Jobs</a>
+</div>
+<br>
